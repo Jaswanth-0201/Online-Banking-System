@@ -2,66 +2,13 @@
 <html>
 <head>
     <title>Online Banking System</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: "Times New Roman", Times, serif;
-        }
-
-        /* Header */
-        .header {
-            height: 20vh;
-            background-color: rgb(0, 128, 0); /* Green */
-        }
-
-        /* Main section */
-        .main {
-            display: flex;
-            height: 80vh;
-        }
-
-        /* Left menu */
-        .menu {
-            width: 20%;
-            background-color: rgb(200, 0, 0); /* Red */
-        }
-
-        /* Content */
-        .content {
-            width: 80%;
-            background-color: rgb(240, 240, 240);
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
 </head>
-
-<body>
-
-    <!-- Header Frame -->
-    <div class="header">
-        <iframe src="header.html"></iframe>
-    </div>
-
-    <!-- Main Area -->
-    <div class="main">
-
-        <!-- Menu Frame -->
-        <div class="menu">
-            <iframe src="menu.html"></iframe>
-        </div>
-
-        <!-- Content Frame -->
-        <div class="content">
-            <iframe name="content" src="home.html"></iframe>
-        </div>
-
-    </div>
-
-</body>
+<frameset rows="20%,80%">
+    <frame src="header.html">
+    <frameset cols="20%,80%">
+        <frame src="menu.html">
+        <frame src="home.html" name="content">
+        <frame src="services.html" name="services">
+    </frameset>
+</frameset>
 </html>
