@@ -2,116 +2,66 @@
 <html>
 <head>
     <title>Online Banking System</title>
-</head>
-
-<frameset rows="20%,80%">
-    <frame src="header.html">
-
-    <frameset cols="20%,80%">
-        <frame src="menu.html">
-        <frame src="home.html" name="content">
-        <frame src="services.html" name="services">
-
-    </frameset>
-</frameset>
-
-</htmlcedd<!DOCTYPE html>
-<html>
-<head>
-    <title>Online Banking System</title>
 
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: rgb(245, 248, 250);
+            font-family: "Times New Roman", Times, serif;
         }
 
-        /* Header (20%) */
+        /* Header */
         .header {
             height: 20vh;
-            background-color: rgb(0, 123, 255);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            font-weight: bold;
+            background-color: rgb(0, 128, 0); /* Green */
         }
 
-        /* Main area (80%) */
+        /* Main section */
         .main {
             display: flex;
             height: 80vh;
         }
 
-        /* Menu (20%) */
+        /* Left menu */
         .menu {
             width: 20%;
-            background-color: rgb(52, 73, 94);
-            padding: 15px;
-            box-sizing: border-box;
+            background-color: rgb(200, 0, 0); /* Red */
         }
 
-        .menu a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            margin-bottom: 10px;
-            background-color: rgb(44, 62, 80);
-            border-radius: 5px;
-        }
-
-        .menu a:hover {
-            background-color: rgb(40, 167, 69);
-        }
-
-        /* Content (80%) */
+        /* Content */
         .content {
             width: 80%;
-            padding: 20px;
-            background-color: rgb(236, 240, 241);
-            box-sizing: border-box;
+            background-color: rgb(240, 240, 240);
         }
 
-        .content h2 {
-            color: rgb(0, 102, 204);
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- Header Frame -->
     <div class="header">
-        Online Banking System
+        <iframe src="header.html"></iframe>
     </div>
 
-    <!-- Main Section -->
+    <!-- Main Area -->
     <div class="main">
 
-        <!-- Menu -->
+        <!-- Menu Frame -->
         <div class="menu">
-            <a href="#">Home</a>
-            <a href="#">Accounts</a>
-            <a href="#">Fund Transfer</a>
-            <a href="#">Services</a>
-            <a href="#">Logout</a>
+            <iframe src="menu.html"></iframe>
         </div>
 
-        <!-- Content -->
+        <!-- Content Frame -->
         <div class="content">
-            <h2>Welcome</h2>
-            <p>
-                This Online Banking System allows users to manage accounts,
-                transfer funds, and access banking services securely.
-            </p>
+            <iframe name="content" src="home.html"></iframe>
         </div>
 
     </div>
 
 </body>
 </html>
-
-
